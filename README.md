@@ -18,7 +18,7 @@ Drop-in replacements for most Ramda math functions.
 
     const format = RD.fixed(2);
 
-    console.log(annualTax(months));
+    console.log(format(annualTax(months)));
 
 # Liberal inputs, conservative outputs
 
