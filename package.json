@@ -1,6 +1,6 @@
 {
   "name": "ramda-decimal",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Ramda-centric wrapper to decimal.js",
   "main": "src/ramda-decimal.js",
   "author": "Wealth Wizards <devwizards@wealthwizards.com>",
