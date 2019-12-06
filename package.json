@@ -5,6 +5,7 @@
   "main": "src/ramda-decimal.js",
   "author": "Wealth Wizards <devwizards@wealthwizards.com>",
   "license": "MIT",
+  "keywords": [ "ramda", "functional", "utils", "utilities", "point-free", "curried", "pure", "math", "arbitrary-precision", "big", "number", "decimal", "float", "math"],
   "scripts": {
     "test": "tape src/**/*.spec.js",
     "lint": "eslint src",
