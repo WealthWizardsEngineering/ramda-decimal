@@ -43,6 +43,7 @@ RD.round = instanceFunc('round');
 RD.subtract = instanceBiFunc('minus');
 RD.toFixed = R.flip(instanceBiFunc('toFixed'));
 RD.modulo = R.flip(instanceBiFunc('modulo'));
+RD.toPower = R.flip(instanceBiFunc('toPower'));
 
 // Inspired by Ramda
 RD.dec = RD.subtract(R.__, 1);

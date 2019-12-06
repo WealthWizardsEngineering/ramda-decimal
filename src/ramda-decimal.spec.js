@@ -310,6 +310,38 @@ test('ramda-decimal', (assert) => {
     jsc.checkForall(
       numOrDec, numOrDec,
       (a, b) => {
+        const actual = RD.toPower(a, b);
+        const expected = new Decimal(b).toPower(new Decimal(a));
+        return actual.equals(expected) || (actual.isNaN() && expected.isNaN());
+      }
+    ),
+    true,
+    '2-ary toPower() for mixtures of Decimal and Number'
+  );
+});
+
+test('ramda-decimal', (assert) => {
+  assert.plan(1);
+  assert.equals(
+    jsc.checkForall(
+      numOrDec, numOrDec,
+      (a, b) => {
+        const actual = RD.toPower(a)(b);
+        const expected = new Decimal(b).toPower(new Decimal(a));
+        return actual.equals(expected) || (actual.isNaN() && expected.isNaN());
+      }
+    ),
+    true,
+    'curried toPower() for mixtures of Decimal and Number'
+  );
+});
+
+test('ramda-decimal', (assert) => {
+  assert.plan(1);
+  assert.equals(
+    jsc.checkForall(
+      numOrDec, numOrDec,
+      (a, b) => {
         const actual = RD.modulo(a, b);
         const expected = new Decimal(b).modulo(new Decimal(a));
         return actual.equals(expected) || (actual.isNaN() && expected.isNaN());
