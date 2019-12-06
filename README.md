@@ -35,7 +35,7 @@ All RD functions return `Decimal`s.
 When there is a corresponding Ramda function, RD uses the same parameter order. This does mean that curried relation functions 
 are unintuitive (in my opinion) in the same way as Ramda:
 
-    const f = R.gt(5);
+    const f = RD.gt(5);
     return f(6); // false: gt(5,6)
 
 Where there is no corresponding Ramda function, we have flipped the parameters when it seems useful for point-free coding:
