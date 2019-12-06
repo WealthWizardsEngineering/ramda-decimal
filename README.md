@@ -42,6 +42,13 @@ Where there is no corresponding Ramda function, we have flipped the parameters w
 
     const formatToPennies = RD.toFixed(2);
 
+# Mixed style
+
+Returned values are just `Decimal` objects, so you are free to combine styles
+if you want to:
+
+    const displayTotal = RD.sum(vals).fixed(2, Decimal.ROUND_HALF_UP);
+
 ------
 
 Created by Wealth Wizards Software Engineering - http://wealthwizards.com
