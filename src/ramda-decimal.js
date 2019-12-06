@@ -5,10 +5,10 @@ const func = name => x => new Decimal(x)[name]();
 
 const biFunc = name => R.uncurryN(
   2,
-  x => { 
+  x => {
     const dx = new Decimal(x);
     return y => dx[name](y);
-   },
+  }
 );
 
 module.exports = {
