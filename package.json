@@ -1,6 +1,6 @@
 {
   "name": "ramda-decimal",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Ramda-centric wrapper to decimal.js",
   "main": "src/ramda-decimal.js",
   "types": "src/ramda-decimal.d.ts",
