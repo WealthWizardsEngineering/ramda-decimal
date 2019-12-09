@@ -20,12 +20,15 @@ export function multiply(a: DecimalNumberOrString, b: DecimalNumberOrString) : D
 export function negate(a: DecimalNumberOrString) : Decimal ;
 export function round(a: DecimalNumberOrString) : Decimal ;
 export function subtract(a: DecimalNumberOrString, b: DecimalNumberOrString) : Decimal ;
-export function toFixed(a: DecimalNumberOrString, b: DecimalNumberOrString) : Decimal;
-export function toNumber(b: DecimalNumberOrString) : Decimal;
 export function modulo(a: DecimalNumberOrString, b: DecimalNumberOrString) : Decimal;
 export function toPower(a: DecimalNumberOrString, b: DecimalNumberOrString) : Decimal;
 export function isPositive(a: DecimalNumberOrString) : Decimal;
 export function isNegative(a: DecimalNumberOrString) : Decimal;
+
+// Conversions
+export function decimal(a: DecimalNumberOrString) : Decimal;
+export function toFixed(a: DecimalNumberOrString, b: DecimalNumberOrString) : String;
+export function toNumber(b: DecimalNumberOrString) : number;
 
 // Inspired by Ramda
 export function dec(a: DecimalNumberOrString) : Decimal;
