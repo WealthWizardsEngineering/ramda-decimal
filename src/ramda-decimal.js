@@ -32,6 +32,7 @@ RD.add = instanceBiFunc('plus');
 RD.ceil = instanceFunc('ceil');
 RD.eq = instanceBiFunc('equals');
 RD.divide = instanceBiFunc('dividedBy');
+RD.divideBy = R.flip(RD.divide);
 RD.floor = instanceFunc('floor');
 RD.gt = instanceBiFunc('gt');
 RD.gte = instanceBiFunc('gte');
@@ -42,8 +43,11 @@ RD.negate = instanceFunc('negated');
 RD.round = instanceFunc('round');
 RD.subtract = instanceBiFunc('minus');
 RD.toFixed = R.flip(instanceBiFunc('toFixed'));
+RD.toNumber = instanceFunc('toNumber');
 RD.modulo = R.flip(instanceBiFunc('modulo'));
 RD.toPower = R.flip(instanceBiFunc('toPower'));
+RD.isPositive = instanceFunc('isPositive');
+RD.isNegative = instanceFunc('isNegative');
 
 // Inspired by Ramda
 RD.dec = RD.subtract(R.__, 1);

@@ -87,6 +87,26 @@ test('ramda-decimal', (assert) => {
 test('ramda-decimal', (assert) => {
   assert.plan(1);
   assert.equals(
+    jsc.checkForall(numOrDec,
+      a => RD.isPositive(a) === new Decimal(a).isPositive()),
+    true,
+    'isPositive() for mixtures of Decimal and Number'
+  );
+});
+
+test('ramda-decimal', (assert) => {
+  assert.plan(1);
+  assert.equals(
+    jsc.checkForall(numOrDec,
+      a => RD.isNegative(a) === new Decimal(a).isNegative()),
+    true,
+    'isNegative() for mixtures of Decimal and Number'
+  );
+});
+
+test('ramda-decimal', (assert) => {
+  assert.plan(1);
+  assert.equals(
     jsc.checkForall(numOrDec, numOrDec,
       a => RD.floor(a)
         .equals(new Decimal(a).floor())),
@@ -453,6 +473,19 @@ test('ramda-decimal', (assert) => {
 
 
 // Conversions
+
+test('ramda-decimal conversions', (assert) => {
+  assert.plan(1);
+  assert.equals(
+    jsc.checkForall(
+      numOrDec,
+      (val) => RD.toNumber(val) === new Decimal(val).toNumber()
+    ),
+    true,
+    'Curried toNumber() for Decimal or Number'
+  );
+});
+
 
 test('ramda-decimal conversions', (assert) => {
   assert.plan(1);
