@@ -38,11 +38,11 @@
     "ramda": "0.26.1"
   },
   "devDependencies": {
-    "eslint": "6.1.0",
+    "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "4.0.0",
-    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-import": "^1.16.0",
     "eslint-plugin-ramda": "2.5.1",
     "jsverify": "0.8.4",
-    "tape": "4.11.0"
+    "tape": "^4.13.0"
   }
 }
