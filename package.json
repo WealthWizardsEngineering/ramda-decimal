@@ -34,17 +34,20 @@
     "type": "git",
     "url": "git+ssh://git@github.com:WealthWizardsEngineering/ramda-decimal.git"
   },
-  "dependencies": {
-    "decimal.js": "10.2.0",
-    "ramda": "0.26.1"
+  "dependencies": {},
+  "peerDependencies": {
+    "decimal.js": "^10.2.0",
+    "ramda": ">=0.26.1"
   },
   "devDependencies": {
+    "decimal.js": "^10.2.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "4.0.0",
     "eslint-plugin-import": "^1.16.0",
     "eslint-plugin-ramda": "2.5.1",
     "jsdoc-to-markdown": "^5.0.3",
     "jsverify": "0.8.4",
+    "ramda": ">=0.26.1",
     "tape": "^4.13.3"
   }
 }
