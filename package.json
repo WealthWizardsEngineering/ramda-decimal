@@ -45,6 +45,6 @@
     "eslint-plugin-ramda": "2.5.1",
     "jsdoc-to-markdown": "^5.0.3",
     "jsverify": "0.8.4",
-    "tape": "^4.13.0"
+    "tape": "^4.13.3"
   }
 }
